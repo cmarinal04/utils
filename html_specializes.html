@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .mensaje {
+            margin-bottom: 20px;
+        }
+
+        .items {
+            margin-bottom: 20px;
+        }
+
+        .color-titulos {
+            color: #191970; 
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #5d7b9d;
+      	    color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje">
+        <p>Este es un mensaje automático y no es necesario responderlo. Si necesita comunicarse con nosotros, puede hacerlo al correo electrónico <a href="mailto:servicio.cliente@cvn.com.co">servicio.cliente@cvn.com.co</a></p>
+    </div>
+
+    <div class="items">
+        <p><strong class="color-titulos">Opciones Generación:</strong></p>
+        <p><strong class="color-titulos">Archivo de resultados: {{archivo_resultados}}</strong></p>
+        <p><strong class="color-titulos"> Vigencia Archivo:</strong> El archivo estará vigente hasta el  {{vigencia_archivo}} </p>
+        <p><strong class="color-titulos">Número de registros: </strong>  {{numero_registros}}</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th >Criterio</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fecha Inicial</td>
+                <td>{{fecha_inicial}}</td>
+            </tr>
+            <tr>
+                <td>Fecha Final</td>
+                <td>{{fecha_final}}</td>
+            </tr>
+            <tr>
+                <td>Posición Arancelaria</td>
+                <td>{{posicion_arancelaria}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
